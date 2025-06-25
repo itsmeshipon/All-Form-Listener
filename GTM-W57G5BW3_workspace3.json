@@ -1,0 +1,406 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2025-06-25 16:41:13",
+    "containerVersion": {
+        "path": "accounts/6268305778/containers/223383285/versions/0",
+        "accountId": "6268305778",
+        "containerId": "223383285",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6268305778/containers/223383285",
+            "accountId": "6268305778",
+            "containerId": "223383285",
+            "name": "demo",
+            "publicId": "GTM-W57G5BW3",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1750868141926",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6268305778/containers/223383285/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-W57G5BW3"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "tagId": "4",
+                "name": "CHTML - Form Datalayer",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n(function() {\n    function formDataToObject(formData) {\n      var object = {};\n      formData.forEach(function(value, key) {\n        object[key] = value;\n      });\n      return object;\n    }\n\n    jQuery(document).on('forminator:form:submit:success', function (e, formData) { \n        var formDataObject = formDataToObject(formData);\n\n        window.dataLayer = window.dataLayer || [];\n        dataLayer.push({\n            event: 'forminator_form_submit',\n            form_id: formDataObject.form_id,\n            inputs: formDataObject\n        });\n    });\n})();\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1750868413340",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "tagId": "6",
+                "name": "Google Ads Tracking || Configure AW ID",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "AW-123456"
+                    }
+                ],
+                "fingerprint": "1750868766992",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "tagId": "7",
+                "name": "Google Ads Tracking || Ad Linker",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1750868811713",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "tagId": "13",
+                "name": "Google Ads Tracking || Lead Form Submitted",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "12345"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "123456"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1750869518967",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "tagId": "14",
+                "name": "Google Ads Tracking || Enhance Configuration",
+                "type": "awud",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "userDataVariable",
+                        "value": "{{User-Provided Data}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "1234"
+                    }
+                ],
+                "fingerprint": "1750869590148",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "triggerId": "5",
+                "name": "Lead Form Submition",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "forminator_form_submit"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1750868650001"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "variableId": "8",
+                "name": "dlv - Email",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "inputs.email-1"
+                    }
+                ],
+                "fingerprint": "1750868960296",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "variableId": "9",
+                "name": "dlv - Phone",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "inputs.phone-1"
+                    }
+                ],
+                "fingerprint": "1750869015181",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "variableId": "10",
+                "name": "cJS - Hashed Email",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n      function sha256(ascii) {\n        function rightRotate(value, amount) {\n            return (value >>> amount) | (value << (32 - amount));\n        }\n        var mathPow = Math.pow;\n        var maxWord = mathPow(2, 32);\n        var lengthProperty = 'length';\n        var i, j; \n        var result = '';\n        var words = [];\n        var asciiBitLength = ascii[lengthProperty] * 8;\n        ascii += '\\x80'; \n        while (ascii[lengthProperty] % 64 - 56) ascii += '\\x00'; \n        for (i = 0; i < ascii[lengthProperty]; i++) {\n            j = ascii.charCodeAt(i);\n            if (j >> 8) return; \n            words[i >> 2] |= j << ((3 - i) % 4) * 8;\n        }\n        words[words[lengthProperty]] = ((asciiBitLength / maxWord) | 0);\n        words[words[lengthProperty]] = (asciiBitLength);\n        var hash = sha256.h = sha256.h || [];\n        var k = sha256.k = sha256.k || [];\n        var primeCounter = k[lengthProperty];\n        var isPrime = {};\n        for (var candidate = 2; primeCounter < 64; candidate++) {\n            if (!isPrime[candidate]) {\n                for (i = 0; i < 313; i += candidate) isPrime[i] = candidate;\n                hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0;\n                k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;\n            }\n        }\n        ascii = null; \n        for (j = 0; j < words[lengthProperty];) {\n            var w = words.slice(j, j += 16);\n            var oldHash = hash;\n            hash = hash.slice(0, 8);\n            for (i = 0; i < 64; i++) {\n                var w15 = w[i - 15], w2 = w[i - 2];\n                var a = hash[0], e = hash[4];\n                var temp1 = hash[7]\n                    + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25))\n                    + ((e & hash[5]) ^ ((~e) & hash[6]))\n                    + k[i]\n                    + (w[i] = (i < 16) ? w[i] : (\n                        w[i - 16]\n                        + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3))\n                        + w[i - 7]\n                        + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10))\n                    ) | 0);\n                var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22))\n                    + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));\n                hash = [(temp1 + temp2) | 0].concat(hash);\n                hash[4] = (hash[4] + temp1) | 0;\n            }\n            for (i = 0; i < 8; i++) {\n                hash[i] = (hash[i] + oldHash[i]) | 0;\n            }\n        }\n        for (i = 0; i < 8; i++) {\n            for (j = 3; j + 1; j--) {\n                var b = (hash[i] >> (j * 8)) & 255;\n                result += ((b < 16) ? 0 : '') + b.toString(16);\n            }\n        }\n        return result;\n    }\n    var input = {{dlv - Email}};\n    return sha256(input);\n}"
+                    }
+                ],
+                "fingerprint": "1750869224661",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "variableId": "11",
+                "name": "cJS - Hashed Phone",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n      function sha256(ascii) {\n        function rightRotate(value, amount) {\n            return (value >>> amount) | (value << (32 - amount));\n        }\n        var mathPow = Math.pow;\n        var maxWord = mathPow(2, 32);\n        var lengthProperty = 'length';\n        var i, j; \n        var result = '';\n        var words = [];\n        var asciiBitLength = ascii[lengthProperty] * 8;\n        ascii += '\\x80'; \n        while (ascii[lengthProperty] % 64 - 56) ascii += '\\x00'; \n        for (i = 0; i < ascii[lengthProperty]; i++) {\n            j = ascii.charCodeAt(i);\n            if (j >> 8) return; \n            words[i >> 2] |= j << ((3 - i) % 4) * 8;\n        }\n        words[words[lengthProperty]] = ((asciiBitLength / maxWord) | 0);\n        words[words[lengthProperty]] = (asciiBitLength);\n        var hash = sha256.h = sha256.h || [];\n        var k = sha256.k = sha256.k || [];\n        var primeCounter = k[lengthProperty];\n        var isPrime = {};\n        for (var candidate = 2; primeCounter < 64; candidate++) {\n            if (!isPrime[candidate]) {\n                for (i = 0; i < 313; i += candidate) isPrime[i] = candidate;\n                hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0;\n                k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;\n            }\n        }\n        ascii = null; \n        for (j = 0; j < words[lengthProperty];) {\n            var w = words.slice(j, j += 16);\n            var oldHash = hash;\n            hash = hash.slice(0, 8);\n            for (i = 0; i < 64; i++) {\n                var w15 = w[i - 15], w2 = w[i - 2];\n                var a = hash[0], e = hash[4];\n                var temp1 = hash[7]\n                    + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25))\n                    + ((e & hash[5]) ^ ((~e) & hash[6]))\n                    + k[i]\n                    + (w[i] = (i < 16) ? w[i] : (\n                        w[i - 16]\n                        + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3))\n                        + w[i - 7]\n                        + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10))\n                    ) | 0);\n                var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22))\n                    + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));\n                hash = [(temp1 + temp2) | 0].concat(hash);\n                hash[4] = (hash[4] + temp1) | 0;\n            }\n            for (i = 0; i < 8; i++) {\n                hash[i] = (hash[i] + oldHash[i]) | 0;\n            }\n        }\n        for (i = 0; i < 8; i++) {\n            for (j = 3; j + 1; j--) {\n                var b = (hash[i] >> (j * 8)) & 255;\n                result += ((b < 16) ? 0 : '') + b.toString(16);\n            }\n        }\n        return result;\n    }\n    var input = {{dlv - Phone}};\n    return sha256(input);\n}"
+                    }
+                ],
+                "fingerprint": "1750869290079",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "variableId": "12",
+                "name": "User-Provided Data",
+                "type": "awec",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "mode",
+                        "value": "MANUAL"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "phone_number",
+                        "value": "{{cJS - Hashed Phone}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "email",
+                        "value": "{{cJS - Hashed Email}}"
+                    }
+                ],
+                "fingerprint": "1750869342151",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6268305778",
+                "containerId": "223383285",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1750869673022",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6268305778/containers/223383285/versions/0?apiLink=version"
+    }
+}
