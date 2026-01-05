@@ -1,0 +1,36 @@
+// copy paste the below code inside Acuity Scheduling (Custom Conversion Tracking)
+
+<script>
+try {
+          var postobject = JSON.stringify({    
+            event: "AcuityEvent",
+            Email: "%email%",
+            ID: "%id%",
+            Type: "%type%",
+            AppointmentType: "%appointmentType%",
+            FullName: "%calendar%",            
+          });
+          window.parent.parent.postMessage(postobject,  "*");
+     } catch(e){
+       window.console.log('error')
+     }
+</script>
+
+
+// copy paste the below code inside GTM
+
+<script>
+  window.addEventListener('message', function(ev){
+   if(JSON.parse(ev.data).event === 'AcuityEvent'){
+      
+     window.dataLayer = window.dataLayer || [];
+     
+     dataLayer.push({
+     event: JSON.parse(ev.data).event,
+     fullName: JSON.parse(ev.data).FullName,
+     Email: JSON.parse(ev.data).Email,
+     ID: JSON.parse(ev.data).ID 
+     })
+   }
+  });
+</script>
